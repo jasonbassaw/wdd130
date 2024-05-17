@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    margin: 0;
+    
+}
+nav, footer p{
+    background-color: rgb(168, 129, 0);
+    color: white;
+    padding: 10px;
+    
+}
+ /*   footer p {
+        background-color: rgb(26, 67, 105);
+        color: steelblue
+    }*/
+a:hover {
+    background-color: rgb(168, 129, 0);
+    color: steelblue;
+}
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav, footer {
+    text-align: center;
+}
+
+
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+p {
+    width: 80%;
+}
