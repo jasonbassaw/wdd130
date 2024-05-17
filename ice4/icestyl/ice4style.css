@@ -13,11 +13,16 @@ body {
 
     
 }
+div.container {
+    text-align: center;
+
+}
+
 
 .bulletpoints {
     text-align: left;
     margin: 0 auto;
-    width: 200%;
+    width: 50%;
     font-size: 20px;
     
 }
