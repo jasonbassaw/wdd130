@@ -1,0 +1,25 @@
+.image img{
+  width: 100%;
+  
+  
+}
+body {
+  
+  background-color: rgb(82, 82, 82);
+  margin: 0auto;
+  padding: 0;
+  text-align: center;
+  
+}
+
+
+.content img {
+  width: 15%;
+  border-radius: 50%;
+  scale: 70%;
+  border: 15px solid rgb(58, 58, 58);
+
+}
+
+
+    
