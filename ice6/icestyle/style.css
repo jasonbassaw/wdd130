@@ -1,0 +1,48 @@
+.home_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+.pic {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    padding-left: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.maintext {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    text-align: center;
+    z-index: 9;
+    font-size: 10em;
+    font-size: 10em;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;;
+    
+}
+
+.greybox {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: grey;
+
+}
+
+.secondtext {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    padding-top: 5em;
+    vertical-align: text-bottom;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100%;
+}
