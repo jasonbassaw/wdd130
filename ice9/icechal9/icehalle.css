@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    
+}
+.card{
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.headerimage{
+    width: 100%;
+    border-top-left-radius: 20%;
+
+}
+.article{
+    padding: 20px;
+    text-align: center;
+    
+}
+.card-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    
+  }
+  .box-two {
+    display: grid;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
+  }
+  .weeks-ago {
+    text-align: center;
+    color: skyblue;
+  }
+
+  
+  h2{
+    text-align: center;
+  }
