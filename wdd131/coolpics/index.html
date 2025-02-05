@@ -1,80 +1,76 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple page to showcase cool pictures.">
-    <meta name="author" content="Jason Bassaw">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a website that contains cool pics" />
+    <meta name="author" content="JasonBassaw" />
     <title>Cool Pics</title>
-    <link rel="stylesheet" href="coolpics.css">
+    <link rel="stylesheet" href="coolpics.css" />
+    <script src="coolpics.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Cool Pics 📷</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Manu</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="place.html">places</a></li>
-                <li><a href="people.html">people</a></li>
-
-            
-
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Current Work</h2>
-        
-
-        <section class="gallery">
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 1">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 2">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 3">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 4">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 5">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 6">
-            </figure>
-           
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 7">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 8">
-            </figure>
-            
-            <figure>
-                <img src="images/norris-sm.jpeg" alt="picture 9">
-            </figure>
-        </section>
-    </main>
-
-    <script src="coolpics.js"></script>
+    <div class="main-container">
+        <header>
+            <nav>
+                <h1>Cool Pics 📷</h1>
+                <button>Menu</button>
+                <ul class=".hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="places.html">Places</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Current Work</h1>
+            <div id="content">
+                <section class="gallery">
+                    <figure>
+                        <img class="focusable" src="images/norris-full.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                    <figure>
+                        <img class="focusable" src="images/norris-sm.jpeg" alt="picture" />
+                    </figure>
+                </section>
+            </div>
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img id="modalImage" src="" />
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>©2023 Not a real site 😀</p>
+        </footer>
+    </div>
 </body>
-<footer>
-    ©2023 Not a real site 😀
-</footer>
 
 </html>
