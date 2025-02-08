@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <meta name="description" content="Blog website" />
+    <meta name="author" content="Spencer Engmann" />
+    <link rel="stylesheet" href="blog.css" />
+    <script src="blog.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Kids Read for Fun</a></h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Current Reviews</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="skiptocontent">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+
+    <main id="maincontent">
+      <div class="grid" id="article-container">
+        
+
+        <div class="form-container">
+          <form action="#" method="get">
+            <label for="sort">Sort:</label>
+            <select name="sort" id="sort">
+              <option value="" disabled selected>Select an option</option>
+              <option value="name">Name</option>
+              <option value="date">Date</option>
+              <option value="Genre">Genre</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <select name="age" id="age">
+              <option value="" disabled selected>Select an option</option>
+              <option value="all">All ages</option>
+              <option value="new">Teen</option>
+              <option value="old">Adult</option>
+            </select>
+
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+              <option value="" disabled selected>Select an option</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select name="rating" id="rating">
+              <option value="" disabled selected>Select an option</option>
+              <option value="all">All Ratings</option>
+              <option value="pg">PG</option>
+              <option value="pg-13">PG-13</option>
+              <option value="r">R</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
