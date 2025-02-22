@@ -349,10 +349,11 @@ footer .social img {
         display: none;
     }
     #hero-msg h1 {
-        color: #6f7364;
+        color: white;
     }
     .home-title {
         font-size: 25px;
+        
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
