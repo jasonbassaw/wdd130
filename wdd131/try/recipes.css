@@ -6,12 +6,12 @@
     --text-dark: #333;
     --text-light: #ebebeb;
     --primary-font: Arial, Helvetica, sans-serif;
-    --secondary-font: "Amatic SC", cursive;
+    --secondary-font: "Amatic SC", sans-serif;
 }
 
 
 body {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     line-height: 1.6;
     margin: 0;
     padding: 0;
