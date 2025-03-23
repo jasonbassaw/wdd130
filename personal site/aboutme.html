@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="aboutme.js" defer></script>
+    <style>
+        body {
+  background: url('images/second.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#logo_link {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="about-content"></div>
+    <header>
+        <a id="logo_link" href="index.html">
+            <div class="logo">JASON BASSAW</div>
+        </a>
+        <nav>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const toggle = document.querySelector(".menu-toggle");
+                  const nav = document.querySelector("nav");
+              
+                  toggle.addEventListener("click", () => {
+                    nav.classList.toggle("active");
+                  });
+                });
+              </script>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="workexperience.html">Work Experience</a>
+            <a href="contactme.html">Contact</a>
+        </nav>
+    </header>
+    <div class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <div id="about-hero-msg"></div>
+    <div class="about-home-title">Let's connect</div>
+    <div class='about-button-box'>
+        <a class='about-book' href="contactme.html">Say hi!</a>
+    </div>
+    <main class="about-home-grid">
+        <div class="grid-grid">
+            <h2>About Me</h2>
+            <h1>Steve Jason Apeaning Bassaw</h1>
+            <p>Originating from Abomosu, a small town in the Eastern region of Ghana, my journey is one of resilience, determination, and goal oriented. From humble beginnings, I’ve navigated the professional world with unwavering resolve, never letting my background limit my ambitions. Currently, as a student at Brigham Young University Idaho (BYUI), pursuing a degree in Computer Information Technology, my passion for helping and empowering others has drawn me into the fields of technology.
+                       With years of working in organizations where I exhibited my computer and leadership skills, I’ve realized and cultivated built-in capability (soft and hard skills) of problem-solving, project, Microsoft Office, multitasking, supervisory skills, couching, French language, translation, financial reporting, Budget Management, Team leadership, management, Teamwork, public relations, time management, training, communication, strategic planning capabilities in me. As a committed team player and an inspiring leader, I consistently go above and beyond expectations, dedicating myself to finding solutions, no matter the complexity of the challenge. My technical skills span programming, technological innovation, and troubleshooting, making me adept at thriving in fast-paced environments.
+                       As a humble and progress-concerned individual, I invest my time in learning to progress in every environment I find myself in. This fuels my desire to help others around me learn as well. My approach to leadership is characterized by my ability to mentor, inspire, and drive teams toward achieving collective goals, with a notable persistence in not stopping until a solution is found. My passion for empowering others shines through in my leadership and collaboration, valuing diversity and striving for excellence in all endeavors. My proven track record and unique skill set position me as an invaluable asset to any organization, ready to contribute to what I desired to help.
+                        </p>
+        </div>
+        <div class="slideshow-container">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="images/rsz_steve_jason.jpeg" alt="Jason in suit 1">
+                </div>
+                <div class="slide fade">
+                    <img src="images/pic2.jpeg" alt="Jason in suit 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/pic3.jpeg" alt="Jason casual">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Portfolio - Jason Bassaw</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/steve-jason-apeaning-bassaw-5b03a4212/" target="_blank">
+                <img src="images/business.png" alt="LinkedIn icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/social-media.png" alt="facebook icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <div class='button-box-3'>
+            <a class='contactdetail' href="contactme.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
