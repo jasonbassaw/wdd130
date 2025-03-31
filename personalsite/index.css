@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/Jason.jpeg') no-repeat center center/cover;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content a {
+    background-color: #f5c88b;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resume-summary {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .resume-summary h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-summary p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .resume-summary .resume-look {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .quote-slideshow {
+    margin-top: 2rem;
+    font-style: italic;
+    font-size: 1.2rem;
+    min-height: 2.5rem;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .social img {
+    width: 40px;
+    margin: 0 10px;
+  }
+  
+  footer .button-box-3 a {
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer .button-box-3 a:hover {
+    background-color: #a06d4d;
+  }
+  
