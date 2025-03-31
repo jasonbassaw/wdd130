@@ -2,7 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('images/Jason.jpeg') no-repeat center center/cover;
+    background-image: url('images/Jason.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
   }
   
@@ -11,12 +16,34 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  #logo_link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #logo_link:visited,
+  #logo_link:focus,
+  #logo_link:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #logo_link:hover .logo {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   }
   
   nav {
@@ -45,7 +72,7 @@ body {
     height: 90vh;
     text-align: center;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 1rem;
   }
   
   .hero-content h1 {
@@ -58,19 +85,31 @@ body {
     margin-bottom: 2rem;
   }
   
+  /* Learn More Button */
   .hero-content a {
-    background-color: #f5c88b;
-    color: #000;
+    background-color: #a06d4d;
+    color: #080808;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block; /* <-- IMPORTANT for transform to work */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   }
   
+  .hero-content a:hover {
+    background-color: #a06d4d;
+    color: #131212;
+    transform: scale(1.08); /* should pop it out */
+    box-shadow: none;
+  }
+  
+  
+  
   .resume-summary {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 3rem;
+    padding: 2rem 1rem;
     text-align: center;
+    margin-top: 1rem;
   }
   
   .resume-summary h2 {
@@ -85,27 +124,60 @@ body {
     line-height: 1.6;
   }
   
+  /* Take a Look Button */
   .resume-summary .resume-look {
     display: inline-block;
     margin-top: 1.5rem;
-    background-color: #fff;
+    background-color: #a06d4d;
     color: #000;
     padding: 0.75rem 1.25rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
   }
   
+  .resume-summary .resume-look:hover {
+    background-color: #b97a55;
+    color: #000;
+    transform: scale(1.15); /* makes it pop out clearly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* soft depth, not glow */
+  }
+  
+
+  
   .quote-slideshow {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
     font-style: italic;
-    font-size: 1.2rem;
-    min-height: 2.5rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    line-height: 1.6;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #quote-text {
+    display: inline-block;
     transition: opacity 0.5s ease-in-out;
   }
   
+  .quote-slideshow::before,
+  .quote-slideshow::after {
+    content: '';
+    display: none;
+  }
+  
   footer {
-    background: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-around;
@@ -116,23 +188,47 @@ body {
   footer a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    display: inline-block; /* 💥 THIS is key for transform to work */
+    transition: transform 0.3s ease, color 0.3s ease;
   }
+  
+  footer a:hover {
+    transform: scale(1.15);
+    color: #f5c88b; /* optional highlight color */
+  }
+  
   
   footer .social img {
     width: 40px;
     margin: 0 10px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
   
+  footer .social a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px white);
+  }
+  
+  /* Contact Button */
   footer .button-box-3 a {
     background-color: #8b5e3c;
-    color: #fff;
+    color: #000;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    transform-origin: center;
   }
   
   footer .button-box-3 a:hover {
     background-color: #a06d4d;
+    color: #000;
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
+
   
