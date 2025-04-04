@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('images/Jason.jpeg');
+    background-image: url('images/Jason.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +210,10 @@ body {
   
   
   footer .social img {
-    width: 40px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+   
     margin: 0 10px;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease, filter 0.3s ease;
