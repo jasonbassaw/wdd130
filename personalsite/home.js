@@ -1,30 +1,38 @@
-const quotes = [
-    "“A simple but powerful reminder of the positive domino effect a good education can have on many aspects of a person’s life and outlook.” – Confucius",
-    "“The more that you read, the more things you will know, the more that you learn, the more places you’ll go.” – Dr. Seuss",
-    "“Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime.” – Maimonides",
-    "“As technology changes the way we communicate, connect, create, consume and innovate, it is democratising access to opportunity. Education is no exception.” – Laura Andreessen"
-  ];
-  
-  let quoteIndex = 0;
-  const quoteText = document.getElementById("quote-text");
-  
-  function showNextQuote() {
-    quoteText.style.opacity = 0;
-    setTimeout(() => {
-      quoteText.textContent = quotes[quoteIndex];
-      quoteText.style.opacity = 1;
-      quoteIndex = (quoteIndex + 1) % quotes.length;
-    }, 500);
-  }
-  
-  showNextQuote();
-  setInterval(showNextQuote, 5000);
-  
-  const menuToggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('main-nav');
-  
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-  
+import { quotes } from './quote.js';
 
+document.addEventListener("DOMContentLoaded", () => {
+  const quoteSlideshow = document.getElementById("quote-text");
+  let quoteIndex = 0;
+
+  // Create slides with forEach
+  const slides = [];
+  quotes.forEach((quote) => {
+    const span = document.createElement("span");
+    span.classList.add("quote-slide");
+    span.textContent = `"${quote.text}" — ${quote.author}`;
+    span.style.display = "none"; // hide by default
+    quoteSlideshow.appendChild(span);
+    slides.push(span);
+  });
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "inline" : "none";
+    });
+  }
+
+  showSlide(quoteIndex); // show first
+  setInterval(() => {
+    quoteIndex = (quoteIndex + 1) % slides.length;
+    showSlide(quoteIndex);
+  }, 5000);
+
+  // Menu toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("main-nav");
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  }
+});
