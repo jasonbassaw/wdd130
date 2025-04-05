@@ -45,23 +45,38 @@ nav {
   
   nav a:hover {
     transform: scale(1.05);
-    color: #f5c88b;
   }
   
 
 
 
-  #logo_link {
-    text-decoration: none;
-  }
-  
   .logo {
     font-size: 1.75rem;
-    font-weight: 700;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
     letter-spacing: 1px;
-    
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    gap: 1rem;
+  }
+  
+  #logo_link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #logo_link:visited,
+  #logo_link:focus,
+  #logo_link:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #logo_link:hover .logo {
+    transform: scale(1.1);
+   
   }
   
 main section {
